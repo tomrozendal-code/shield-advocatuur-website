@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
@@ -25,6 +26,7 @@
 <link rel="alternate" hreflang="nl" href="https://www.shieldadvocatuur.nl/index.html">
 <link rel="alternate" hreflang="en" href="https://www.shieldadvocatuur.nl/en/index.html">
 <link rel="alternate" hreflang="es" href="https://www.shieldadvocatuur.nl/es/index.html">
+<link rel="alternate" hreflang="de" href="https://www.shieldadvocatuur.nl/de/index.html">
 <link rel="alternate" hreflang="x-default" href="https://www.shieldadvocatuur.nl/index.html">
 </head>
 <body>
@@ -34,7 +36,7 @@
   <div class="container">
     <a href="tel:0031357850717">+31 (0)35 7850717</a>
     <div class="tb-right">
-      <span class="lang-switch"><a href="index.html" class="active">NL</a><a href="en/index.html">EN</a><a href="es/index.html">ES</a></span>
+      <span class="lang-switch"><button type="button" class="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Taal / Language"><span class="fi fi-nl"></span><span class="lang-code">NL</span><span class="lang-caret" aria-hidden="true">&#9662;</span></button><div class="lang-menu" role="listbox"><a href="index.html" role="option" class="active"><span class="fi fi-nl"></span><span class="lang-name">Nederlands</span></a><a href="en/index.html" role="option"><span class="fi fi-gb"></span><span class="lang-name">English</span></a><a href="en/index.html" role="option"><span class="fi fi-au"></span><span class="lang-name">Australia<small>English</small></span></a><a href="es/index.html" role="option"><span class="fi fi-es"></span><span class="lang-name">Espa&ntilde;ol</span></a><a href="es/index.html" role="option"><span class="fi fi-ar"></span><span class="lang-name">Argentina<small>Espa&ntilde;ol</small></span></a><a href="es/index.html" role="option"><span class="fi fi-pa"></span><span class="lang-name">Panam&aacute;<small>Espa&ntilde;ol</small></span></a><a href="de/index.html" role="option"><span class="fi fi-de"></span><span class="lang-name">Deutsch</span></a></div></span>
       <a href="mailto:contact@shieldadvocatuur.nl">contact@shieldadvocatuur.nl</a>
       <a href="contact.html">Locaties: Amsterdam &amp; &rsquo;t Gooi</a>
     </div>
@@ -47,19 +49,21 @@
     </a>
     <nav>
       <ul>
+        <li><a href="over-ons.html">Over ons</a></li>
         <li>
           <a href="#" class="">Expertises <span class="caret">&#9662;</span></a>
           <div class="dropdown">
-            <a href="ondernemingsrecht.html">Ondernemingsrecht</a>
-<a href="contractenrecht.html">Contractenrecht</a>
+            <a href="ondernemingsrecht.html">Corporate Law</a>
+<a href="contractenrecht.html">Commercial Contracts</a>
 <a href="compliance.html">Compliance</a>
-<a href="trusted-advisor.html">Trusted advisor</a>
-<a href="personen-en-familierecht.html">Personen- en familierecht</a>
-<a href="strafrecht.html">Strafrecht</a>
+<a href="trusted-advisor.html">Trusted Advisor</a>
+<a href="personen-en-familierecht.html">Family Law</a>
+<a href="strafrecht.html">Criminal Law</a>
           </div>
         </li>
-        <li><a href="start-je-bedrijf.html">Start je bedrijf</a></li>
-        <li><a href="vacatures.html">Vacatures</a></li>
+        <li><a href="start-je-bedrijf.html">Onderneming starten</a></li>
+        <li><a href="vacatures.html">Carri&egrave;re</a></li>
+        <li><a href="nieuws.html">Nieuws</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -87,8 +91,8 @@
 <div class="stats-strip reveal">
   <div class="container">
     <div class="stat-item"><div class="num">2</div><div class="label">Vestigingen &mdash; Amsterdam &amp; &rsquo;t Gooi</div></div>
-    <div class="stat-item"><div class="num">6</div><div class="label">Rechtsgebieden onder &eacute;&eacute;n dak</div></div>
-    <div class="stat-item"><div class="num">NL/EN/ES</div><div class="label">Dienstverlening in drie talen</div></div>
+    <div class="stat-item"><div class="num">20+</div><div class="label">Jaar juridische ervaring</div></div>
+    <div class="stat-item"><div class="num">500+</div><div class="label">Dossiers succesvol begeleid</div></div>
     <div class="stat-item"><div class="num">100%</div><div class="label">Onafhankelijk boutique kantoor</div></div>
   </div>
 </div>
@@ -139,6 +143,12 @@
   </div>
 </section>
 
+<section class="image-band reveal">
+  <div class="container">
+    <p class="band-quote">Wij beschermen wat voor onze cli&euml;nten van waarde is.</p>
+  </div>
+</section>
+
 <section id="expertises">
   <div class="container">
     <div class="section-head reveal">
@@ -151,38 +161,38 @@
     <div class="expertise-grid reveal">
       <div class="expertise-card">
         <div class="bar"></div>
-        <h3>Ondernemingsrecht</h3>
-        <p>Onderhandelen, sommeren en procederen bij conflicten tussen ondernemingen, aandeelhouders of bestuurders.</p>
+        <h3>Corporate Law</h3>
+        <p>Advies en procesvoering bij geschillen tussen ondernemingen, aandeelhouders en bestuurders &mdash; van onderhandeling en sommatie tot procedure.</p>
         <a href="ondernemingsrecht.html" class="more">Meer informatie</a>
       </div>
 <div class="expertise-card">
         <div class="bar"></div>
-        <h3>Contractenrecht</h3>
-        <p>Opstellen, beoordelen, onderhandelen en be&euml;indigen van contracten en overeenkomsten, nationaal en internationaal.</p>
+        <h3>Commercial Contracts</h3>
+        <p>Opstellen, beoordelen, onderhandelen en be&euml;indigen van commerci&euml;le overeenkomsten, nationaal en grensoverschrijdend.</p>
         <a href="contractenrecht.html" class="more">Meer informatie</a>
       </div>
 <div class="expertise-card">
         <div class="bar"></div>
         <h3>Compliance</h3>
-        <p>Gedegen begeleiding bij AVG, WWFT, Mededingingswet en andere complexe compliance-eisen.</p>
+        <p>Deskundige begeleiding bij de AVG, de Wwft, het mededingingsrecht en andere complexe toezichtrechtelijke verplichtingen.</p>
         <a href="compliance.html" class="more">Meer informatie</a>
       </div>
 <div class="expertise-card">
         <div class="bar"></div>
-        <h3>Trusted advisor</h3>
-        <p>Een vertrouwde adviseur en sparringpartner voor ondernemers bij groei, strategie en onzekerheid.</p>
+        <h3>Trusted Advisor</h3>
+        <p>Een vertrouwde raadsman en klankbord voor ondernemers bij groei, strategie en onzekerheid.</p>
         <a href="trusted-advisor.html" class="more">Meer informatie</a>
       </div>
 <div class="expertise-card">
         <div class="bar"></div>
-        <h3>Personen- en familierecht</h3>
-        <p>Advies en begeleiding bij echtscheiding, gezag, omgangsregeling en jeugdrechtelijke kwesties.</p>
+        <h3>Family Law</h3>
+        <p>Advies en vertegenwoordiging bij echtscheiding, gezag, omgangsregelingen en jeugdrechtelijke kwesties.</p>
         <a href="personen-en-familierecht.html" class="more">Meer informatie</a>
       </div>
 <div class="expertise-card">
         <div class="bar"></div>
-        <h3>Strafrecht</h3>
-        <p>Bijstand bij strafrechtelijke vervolging van particulieren en ondernemers, en het voorkomen daarvan.</p>
+        <h3>Criminal Law</h3>
+        <p>Verdediging van particulieren en ondernemers bij strafrechtelijke vervolging &mdash; en het voorkomen daarvan.</p>
         <a href="strafrecht.html" class="more">Meer informatie</a>
       </div>
     </div>
@@ -244,19 +254,21 @@
       <div class="footer-col">
         <h5>Expertises</h5>
         <ul>
-          <li><a href="ondernemingsrecht.html">Ondernemingsrecht</a></li>
-          <li><a href="contractenrecht.html">Contractenrecht</a></li>
+          <li><a href="ondernemingsrecht.html">Corporate Law</a></li>
+          <li><a href="contractenrecht.html">Commercial Contracts</a></li>
           <li><a href="compliance.html">Compliance</a></li>
-          <li><a href="trusted-advisor.html">Trusted advisor</a></li>
-          <li><a href="personen-en-familierecht.html">Personen- en familierecht</a></li>
-          <li><a href="strafrecht.html">Strafrecht</a></li>
+          <li><a href="trusted-advisor.html">Trusted Advisor</a></li>
+          <li><a href="personen-en-familierecht.html">Family Law</a></li>
+          <li><a href="strafrecht.html">Criminal Law</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Kantoor</h5>
         <ul>
-          <li><a href="start-je-bedrijf.html">Start je bedrijf</a></li>
-          <li><a href="vacatures.html">Vacatures</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="start-je-bedrijf.html">Onderneming starten</a></li>
+          <li><a href="vacatures.html">Carri&egrave;re</a></li>
+          <li><a href="nieuws.html">Nieuws</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -365,6 +377,31 @@
       if(!naam||!email||!bericht){alert('Vul a.u.b. uw naam, e-mailadres en bericht in.');return;}
       var body=encodeURIComponent('Naam: '+naam+'\nE-mail: '+email+'\nTelefoon: '+tel+'\n\n'+bericht);
       window.location.href='mailto:contact@shieldadvocatuur.nl?subject='+encodeURIComponent('Aanvraag via website - '+naam)+'&body='+body;
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.lang-switch').forEach(function(sw){
+    var btn=sw.querySelector('.lang-btn');
+    if(!btn) return;
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      var open=sw.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+  document.addEventListener('click',function(){
+    document.querySelectorAll('.lang-switch.open').forEach(function(sw){
+      sw.classList.remove('open');
+      var b=sw.querySelector('.lang-btn'); if(b) b.setAttribute('aria-expanded','false');
+    });
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape') document.querySelectorAll('.lang-switch.open').forEach(function(sw){
+      sw.classList.remove('open');
+      var b=sw.querySelector('.lang-btn'); if(b) b.setAttribute('aria-expanded','false');
     });
   });
 })();
