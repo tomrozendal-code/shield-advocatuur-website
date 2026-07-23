@@ -921,3 +921,13 @@ a.news-card:hover{transform:translateY(-5px);box-shadow:0 24px 52px -30px rgba(2
   .news-featured .feat-visual{min-height:150px;}
   .news-featured .feat-body{padding:34px 30px;}
 }
+
+/* ===== Homepage video-band: "We will guide your way" ===== */
+.guide-video{padding:clamp(46px,7vw,84px) 0;}
+.guide-video .video-card{position:relative;max-width:1080px;margin:0 auto;border-radius:20px;overflow:hidden;aspect-ratio:16/9;box-shadow:0 34px 70px -24px rgba(20,22,28,.5);background:#0c0e12;}
+.guide-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+.guide-video .video-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(12,14,18,.68) 0%,rgba(12,14,18,.32) 44%,rgba(12,14,18,0) 70%),linear-gradient(to top,rgba(12,14,18,.62) 0%,rgba(12,14,18,0) 46%);pointer-events:none;}
+.guide-video .video-caption{position:absolute;left:clamp(24px,4.5vw,52px);right:clamp(24px,4.5vw,52px);bottom:clamp(24px,4.5vw,46px);}
+.guide-video .video-dash{display:block;width:46px;height:3px;background:var(--red);margin-bottom:18px;border-radius:2px;}
+.guide-video .video-caption h2{margin:0;color:#fff;font-family:'Fraunces','Inter',serif;font-weight:500;font-size:clamp(30px,5vw,56px);line-height:1.04;letter-spacing:-.01em;text-shadow:0 2px 30px rgba(0,0,0,.4);max-width:15ch;}
+@media(max-width:640px){.guide-video .video-card{aspect-ratio:4/5;border-radius:16px;}.guide-video .video-caption h2{font-size:clamp(26px,8vw,40px);}}
