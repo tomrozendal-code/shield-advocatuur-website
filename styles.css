@@ -335,7 +335,7 @@ nav li:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
 .page-hero.has-photo .container{width:100%;}
 .page-hero.hp-corporate{background-image:url("assets/photos/page-corporate.jpg?v=2");}
 .page-hero.hp-contracts{background-image:url("assets/photos/page-contracts.jpg");background-position:center 40%;}
-.page-hero.hp-compliance{background-image:url("assets/photos/page-compliance.jpg");}
+.page-hero.hp-compliance{background-image:url("assets/photos/page-compliance.jpg?v=2");}
 .page-hero.hp-advisor{background-image:url("assets/photos/page-advisor.jpg");background-position:center 34%;}
 .page-hero.hp-family{background-image:url("assets/photos/page-family.jpg");background-position:center 74%;}
 .page-hero.hp-family::before{
